@@ -2,6 +2,7 @@ package observer;
 
 public interface Observer {
 
-    void receiveOffer(String nameCompany, int salary);
+    void receiveOffer(String companyName, String profession, int salary);
+    String getProfessionInterest();
 
 }

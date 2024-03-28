@@ -19,10 +19,10 @@ public class Program {
         Company yandex = new Company("Yandex", publisher, 155000);
         Company geekBrains = new Company("GeekBrains", publisher, 110000);
 
-        Student student = new Student("Student #1");
-        Master master1 = new Master("Master #1");
-        Master master2 = new Master("Master #2");
-        Supervisor supervisor1 = new Supervisor("Supervisor #1");
+        Student student = new Student("Student #1", "Разработчик");
+        Master master1 = new Master("Master #1", "Программист");
+        Master master2 = new Master("Master #2", "Аналитик");
+        Supervisor supervisor1 = new Supervisor("Supervisor #1", "Руководитель");
 
         publisher.registerObserver(student);
         publisher.registerObserver(master1);

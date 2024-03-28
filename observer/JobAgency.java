@@ -7,11 +7,12 @@ public class JobAgency implements Publisher {
 
     private Collection<Observer> observers = new ArrayList<>();
 
-    public void sendOffer(String companyName, int salary){
+    public void sendOffer(String companyName, String profession, int salary){
         for (Observer observer : observers){
-            observer.receiveOffer(companyName, salary);
+            observer.receiveOffer(companyName, profession, salary);
         }
     }
+
 
     @Override
     public void registerObserver(Observer observer) {

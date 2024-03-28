@@ -2,7 +2,7 @@ package observer;
 
 public interface Publisher {
 
-    void sendOffer(String companyName, int salary);
+    void sendOffer(String companyName, String profession, int salary);
 
     void registerObserver(Observer observer);
 
